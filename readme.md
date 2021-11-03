@@ -1,6 +1,6 @@
 # test-bundler
 
-Test kinds of bundlers with a react app project.
+Test kinds of bundlers with the same SPA project with React and TypeScript.
 
 ## Webpack
 
