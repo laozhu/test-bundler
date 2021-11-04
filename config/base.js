@@ -14,7 +14,7 @@ module.exports = {
 
   output: {
     filename: '[name].js',
-    chunkFilename: '[id].chunk.js',
+    chunkFilename: '[name].chunk.js',
     path: path.resolve(process.cwd(), 'dist'),
     publicPath: '/',
     clean: true,
@@ -56,10 +56,10 @@ module.exports = {
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
-        react: {
-          name: 'react',
-          test: /[/\\]node_modules[/\\]/,
+        vendors: {
+          name: 'vendors',
           chunks: 'all',
+          test: /[/\\]node_modules[/\\]/,
         },
       },
     },

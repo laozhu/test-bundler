@@ -9,6 +9,8 @@ module.exports = {
   devtool: 'source-map',
 
   output: {
+    filename: '[name].[hash:8].js',
+    chunkFilename: '[name].[hash:8].chunk.js',
     pathinfo: false,
   },
 
@@ -41,8 +43,8 @@ module.exports = {
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].chunk.css',
+      filename: '[name].[hash:8].css',
+      chunkFilename: '[name].[hash:8].chunk.css',
     }),
     new CopyWebpackPlugin({
       patterns: [
