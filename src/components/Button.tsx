@@ -2,7 +2,7 @@ import './Button.css';
 
 import clsx from 'clsx';
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export interface ButtonProps {
   href?: string;
@@ -21,9 +21,11 @@ type PropsWithDefault = ButtonProps & DefaultProps;
 
 export const Button: React.FC<ButtonProps> = (props) => {
   const { href, onClick, disabled, className, children } = props as PropsWithDefault;
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = (event: React.MouseEvent) => {
+    event.preventDefault();
+
     if (disabled) {
       return;
     }
@@ -34,7 +36,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
     }
 
     if (href && href.startsWith('/')) {
-      history.push(href);
+      navigate(href);
     }
   };
 

@@ -1,0 +1,9 @@
+.footer {
+  flex: 0 0 4rem;
+  height: 4rem;
+  border-top: 1px solid rgb(0 0 0 / 15%);
+  color: gray;
+  font-family: ui-monospace, sans-serif;
+  text-align: center;
+  line-height: 4rem;
+}

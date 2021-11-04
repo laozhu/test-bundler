@@ -50,6 +50,7 @@
     "production": [
       ">0.2%",
       "not dead",
+      "not ie 11",
       "not op_mini all"
     ],
     "development": [
@@ -65,9 +66,10 @@
     "@babel/runtime": "^7.16.0",
     "clsx": "^1.1.1",
     "core-js": "^3.19.1",
+    "history": "^5.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^5.3.0"
+    "react-router-dom": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -77,8 +79,8 @@
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
-    "@fastcms/eslint-config": "^1.8.4",
-    "@fastcms/stylelint-config": "^1.5.3",
+    "@fastcms/eslint-config": "^1.8.5",
+    "@fastcms/stylelint-config": "^1.5.4",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.1",
     "@swc/core": "^1.2.106",
     "@swc/jest": "^0.2.5",
@@ -93,7 +95,7 @@
     "browserslist": "^4.17.6",
     "commitizen": "^4.2.4",
     "copy-webpack-plugin": "^9.0.1",
-    "css-loader": "^6.5.0",
+    "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.1.1",
     "cz-emoji": "^1.3.1",
     "dotenv-webpack": "^7.0.3",
